@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <!-- Botón para llamar a MiPagina -->
+    <ion-button expand="block" (click)="navegarAOtraPagina()">Ir a Mi Otra Pagina </ion-button>
+    <ion-button expand="block" (click)="navegarAMiPagina()">Ir a Mi Pagina Tabs</ion-button>
+    <ion-button expand="block" (click)="presentToast()" >Mostrar Toast</ion-button>
+    <ion-button expand="block" (click)="presentAlert('Este es un Aler Controller')" >Mostrar Alerta</ion-button>
+  </div>
+</ion-content>
